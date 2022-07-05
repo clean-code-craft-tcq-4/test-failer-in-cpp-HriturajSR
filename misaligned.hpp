@@ -24,5 +24,6 @@ namespace misaligned
     {
     public:
         int printColorMap();
+        int GetPairNumber(MajorColor major, MinorColor minor);
+        int ExpectedNumber(MajorColor major, MinorColor minor);
     };
-}
