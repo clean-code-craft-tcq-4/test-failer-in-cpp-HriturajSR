@@ -35,9 +35,9 @@ namespace misaligned
 void testPairToNumber(misaligned::MajorColor major, misaligned::MinorColor minor)
 {
     misaligned::Misaligned *misaligned_object{};
-    int pairNumber = misaligned_object->GetPairNumberFromColor(major, minor);
+    int pairNumber = misaligned_object->GetPairNumber(major, minor);
     std::cout << "Pair Number " << pairNumber << std::endl;
-    assert(pairNumber == misaligned_object->expectNumberFromColor(major, minor));
+    assert(pairNumber == misaligned_object->ExpectedNumber(major, minor));
 }
 
 int main()
