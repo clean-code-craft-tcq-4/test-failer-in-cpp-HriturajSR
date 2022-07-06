@@ -47,7 +47,7 @@ int main()
     misaligned::Misaligned misaligned_object;
     int result = misaligned_object.printColorMap();
     assert(result == 25);
-    testPairToNumber(misaligned::WHITE, misaligned::BROWN);
+    //testPairToNumber(misaligned::WHITE, misaligned::BROWN);
     testPairToNumber(misaligned::WHITE, misaligned::SLATE);
     std::cout << "All is well (maybe!)\n";
     return 0;
