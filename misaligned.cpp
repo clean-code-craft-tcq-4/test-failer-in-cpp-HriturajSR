@@ -36,8 +36,10 @@ void testPairToNumber(misaligned::MajorColor major, misaligned::MinorColor minor
 {
     misaligned::Misaligned *misaligned_object{};
     int pairNumber = misaligned_object->GetPairNumber(major, minor);
+    int ExpectedpairNumber = misaligned_object->ExpectedNumber(major, minor);
     std::cout << "Pair Number " << pairNumber << std::endl;
-    assert(pairNumber == misaligned_object->ExpectedNumber(major, minor));
+    std::cout << "Expected Pair Number " << ExpectedpairNumber << std::endl;
+    assert(pairNumber == ExpectedpairNumber);
 }
 
 int main()
