@@ -1,4 +1,4 @@
-#include "alerter.h"
+#include "alerter.hpp"
 
 namespace alerter
 {
